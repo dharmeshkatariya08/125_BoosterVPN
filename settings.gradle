@@ -1,0 +1,2 @@
+rootProject.name = "125_Bosster_VPN"
+include ':app'
