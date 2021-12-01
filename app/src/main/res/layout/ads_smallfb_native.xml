@@ -77,7 +77,7 @@
             android:layout_height="50dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:background="@color/background_color"
+            android:background="@color/primary"
             android:gravity="center"
             android:paddingLeft="3dp"
             android:paddingRight="3dp"

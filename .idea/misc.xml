@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android_Projects/125 Booster VPN/125 Booster VPN/app/src/main/res/layout/activity_main.xml" value="0.3546875" />
+        <entry key="..\:/Android_Projects/125 Booster VPN/125 Booster VPN/app/src/main/res/layout/activity_server.xml" value="0.3546875" />
+        <entry key="..\:/Android_Projects/125 Booster VPN/125 Booster VPN/app/src/main/res/layout/activity_splash.xml" value="0.3546875" />
+        <entry key="..\:/Android_Projects/125 Booster VPN/125 Booster VPN/app/src/main/res/layout/ad_progress_dialog.xml" value="0.3546875" />
+        <entry key="..\:/Android_Projects/125 Booster VPN/125 Booster VPN/app/src/main/res/layout/ad_view.xml" value="0.3546875" />
+        <entry key="..\:/Android_Projects/125 Booster VPN/125 Booster VPN/app/src/main/res/layout/ad_view1.xml" value="0.3546875" />
+        <entry key="..\:/Android_Projects/125 Booster VPN/125 Booster VPN/app/src/main/res/layout/ads_nativ_admob.xml" value="0.19739583333333333" />
+        <entry key="..\:/Android_Projects/125 Booster VPN/125 Booster VPN/app/src/main/res/layout/ads_nativ_admob1.xml" value="0.3546875" />
+        <entry key="..\:/Android_Projects/125 Booster VPN/125 Booster VPN/app/src/main/res/layout/ads_nativ_admob3.xml" value="0.3546875" />
+        <entry key="..\:/Android_Projects/125 Booster VPN/125 Booster VPN/app/src/main/res/layout/ads_native_small_template_view.xml" value="0.3546875" />
+        <entry key="..\:/Android_Projects/125 Booster VPN/125 Booster VPN/app/src/main/res/layout/ads_smallfb_native.xml" value="0.19739583333333333" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

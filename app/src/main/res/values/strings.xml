@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">125_Bosster_VPN</string>
 
-    <string name="facebook_app_id">514035652972069</string>
     <string name="share_app_message">Download this App</string>
 
     <string name="log_in">LOGIN</string>

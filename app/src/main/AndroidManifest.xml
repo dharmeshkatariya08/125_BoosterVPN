@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.booster.vpn">
+    package="com.taptapvpn.speedproxyvpn">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
-        android:name=".AdsClass.MyApplication"
+        android:name="com.taptapvpn.speedproxyvpn.AdsClass.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -24,7 +24,7 @@
             android:name="org.apache.http.legacy"
             android:required="false" />
 
-        <activity android:name="com.booster.vpn.Activity_Class.SplashActivity">
+        <activity android:name="com.taptapvpn.speedproxyvpn.Activity_Class.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,10 +32,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.booster.vpn.Activity_Class.Main_Activity"
+            android:name="com.taptapvpn.speedproxyvpn.Activity_Class.Main_Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.booster.vpn.Activity_Class.ListOfServers_Activity"
+            android:name="com.taptapvpn.speedproxyvpn.Activity_Class.ListOfServers_Activity"
             android:screenOrientation="portrait" />
 
         <!--// Ads //-->
@@ -50,7 +50,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.booster.vpn.mobileadsinitprovider"
+            android:authorities="com.taptapvpn.speedproxyvpn.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100"
             tools:replace="android:authorities" />
@@ -64,9 +64,7 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
+
         <meta-data
             android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
             android:value="false" />
