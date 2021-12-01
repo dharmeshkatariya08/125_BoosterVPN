@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">125_Bosster_VPN</string>
+
+    <string name="facebook_app_id">514035652972069</string>
+    <string name="share_app_message">Download this App</string>
+
+    <string name="log_in">LOGIN</string>
+    <string name="host_url_title">Host Url: </string>
+    <string name="carrier_id_title">Carrier ID: </string>
+    <string name="select_country">Select Location</string>
+    <string name="default_server_ip_text">00.000.000.00</string>
+    <string name="best_performance_server">Select Fastest Server</string>
+    <string name="_0_mb_of_0_mb_available">0 Mb of 0 Mb available</string>
+    <string name="default_region">DEFAULT REGION</string>
+    <string name="new_york_ny">New York, NY</string>
+    <string name="_0_b">0 B</string>
+    <string name="location">Location :</string>
+    <string name="update_ip">Update IP</string>
+    <string name="scanning">Scanning</string>
+
 </resources>
