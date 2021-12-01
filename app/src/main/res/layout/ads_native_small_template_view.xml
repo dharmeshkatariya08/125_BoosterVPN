@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.gms.ads.nativead.NativeAdView
+        android:id="@+id/native_ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:minHeight="115dp"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="8" />
+
+                <LinearLayout
+                    android:id="@+id/background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/primary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:text="Test Ad :Flood-It!"
+                            android:textColor="#808080"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="18dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/roundbgq"
+                                android:gravity="center"
+                                android:text="Ad"
+                                android:textColor="#000"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <RatingBar
+                                android:id="@+id/rating_bar"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:numStars="5"
+                                android:textColor="#808080"
+                                android:textSize="12sp"
+                                android:visibility="visible">
+
+                            </RatingBar>
+
+                            <TextView
+                                android:id="@+id/secondary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:text="nothing"
+                                android:textColor="#808080"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/body"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="1dp"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="description"
+                            android:textColor="#4B4A4A"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/cta"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:textStyle="bold"
+                            android:textSize="9sp"
+                            android:text="INSTALL"
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.gms.ads.nativead.NativeAdView>
+
+</merge>

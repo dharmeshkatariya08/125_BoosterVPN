@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/mainscreenbgl" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/native_container"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <RelativeLayout
+                        android:id="@+id/connection_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="80dp"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:adjustViewBounds="true"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_download" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/appfont"
+                                    android:text="Download"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_download"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:fontFamily="@font/appfont"
+                                    android:text="@string/_0_b"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:adjustViewBounds="true"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_upload" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/appfont"
+                                    android:text="Upload"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_upload"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:fontFamily="@font/appfont"
+                                    android:text="@string/_0_b"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/img_connect"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="140dp"
+                            android:adjustViewBounds="true"
+                            android:onClick="onConnectBtnClick"
+                            android:src="@drawable/ic_off" />
+
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingBottom="8dp"
+                            android:theme="@style/ProgressBarTheme"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_connect"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/appfont"
+                                android:text="@string/update_ip"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/connection_state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/appfont"
+                                android:text="@string/scanning"
+                                android:textColor="#FF0000"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_below="@id/connection_layout"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="55dp"
+                        android:background="@drawable/btnbox"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/ic_location" />
+
+                        <TextView
+                            android:id="@+id/server_ip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/appfont"
+                            android:gravity="center"
+                            android:text="Anything"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:overScrollMode="ifContentScrolls">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/appfont"
+                    android:text="@string/_0_mb_of_0_mb_available"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="3dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/appfont"
+                        android:text="@string/location"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/optimal_server_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/btnbox"
+                        android:gravity="center"
+                        android:onClick="onServerChooserClick"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/country_flag"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/ic_earth" />
+
+                        <TextView
+                            android:id="@+id/selected_server"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/appfont"
+                            android:gravity="center"
+                            android:text="@string/select_country"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="25dp"
+                            android:padding="2dp"
+                            android:src="@drawable/server_signal_3" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/native_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:orientation="vertical" />
+
+</RelativeLayout>
