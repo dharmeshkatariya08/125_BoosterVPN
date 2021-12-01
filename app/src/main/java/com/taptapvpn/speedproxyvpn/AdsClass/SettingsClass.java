@@ -604,11 +604,15 @@ public class SettingsClass {
     }
 
     public static void PrivacyPolicy(Activity activity) {
-        Intent intent = new Intent();
-        intent.setAction("android.intent.action.VIEW");
-        intent.addCategory("android.intent.category.BROWSABLE");
-        intent.setData(Uri.parse(Privecy_policy));
-        activity.startActivity(intent);
+        try {
+            Intent intent = new Intent();
+            intent.setAction("android.intent.action.VIEW");
+            intent.addCategory("android.intent.category.BROWSABLE");
+            intent.setData(Uri.parse(Privecy_policy));
+            activity.startActivity(intent);
+        } catch (Exception e) {
+
+        }
     }
 
     public static boolean appInstalled = false;

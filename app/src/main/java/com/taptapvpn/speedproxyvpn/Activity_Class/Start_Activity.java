@@ -60,6 +60,7 @@ public abstract class Start_Activity extends AppCompatActivity implements View.O
     ImageView country_flag;
     TextView uploading_speed_textview;
     TextView downloading_speed_textview;
+    TextView privecyPolicy;
 
     Preference_Class preference;
     boolean connected = false;
@@ -126,7 +127,7 @@ public abstract class Start_Activity extends AppCompatActivity implements View.O
         MyAddManager.getInstance(this).show_NATIVE((ViewGroup) findViewById(R.id.native_container), i2);
 
         loginToVpn();
-
+        privecyPolicy = findViewById(R.id.tvPrivecyPolicy);
         server_ip = findViewById(R.id.server_ip);
         img_connect = findViewById(R.id.img_connect);
         connectionStateTextView = findViewById(R.id.connection_state);
@@ -135,6 +136,13 @@ public abstract class Start_Activity extends AppCompatActivity implements View.O
         country_flag = findViewById(R.id.country_flag);
         uploading_speed_textview = findViewById(R.id.txt_upload);
         downloading_speed_textview = findViewById(R.id.txt_download);
+
+        privecyPolicy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SettingsClass.PrivacyPolicy(Start_Activity.this);
+            }
+        });
 
         preference = new Preference_Class(this);
         getip();
